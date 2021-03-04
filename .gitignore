@@ -1,0 +1,4 @@
+centos7/httpd/conf/server.key
+centos7/httpd/conf/server.crt
+centos7/ssl/*
+!.gitkeep

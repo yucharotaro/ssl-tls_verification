@@ -1,0 +1,147 @@
+Version: 2.0.8-static
+OpenSSL 1.1.1k-dev  xx XXX xxxx
+
+Connected to 172.X.X.1
+
+Testing SSL server 172.X.X.1 on port 4443 using SNI name 172.X.X.1
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   enabled
+TLSv1.1   enabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS Compression:
+Compression disabled
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  256 bits  AECDH-AES256-SHA             
+Accepted  TLSv1.2  256 bits  ADH-AES256-GCM-SHA384        
+Accepted  TLSv1.2  256 bits  ADH-AES256-SHA256            
+Accepted  TLSv1.2  256 bits  ADH-AES256-SHA               
+Accepted  TLSv1.2  256 bits  ADH-CAMELLIA256-SHA          
+Accepted  TLSv1.2  128 bits  AECDH-AES128-SHA             
+Accepted  TLSv1.2  128 bits  ADH-AES128-GCM-SHA256        
+Accepted  TLSv1.2  128 bits  ADH-AES128-SHA256            
+Accepted  TLSv1.2  128 bits  ADH-AES128-SHA               
+Accepted  TLSv1.2  128 bits  ADH-SEED-SHA                 
+Accepted  TLSv1.2  128 bits  ADH-CAMELLIA128-SHA          
+Accepted  TLSv1.2  112 bits  AECDH-DES-CBC3-SHA           
+Accepted  TLSv1.2  112 bits  ADH-DES-CBC3-SHA             
+Accepted  TLSv1.2  128 bits  AECDH-RC4-SHA                
+Accepted  TLSv1.2  128 bits  ADH-RC4-MD5                  
+Accepted  TLSv1.2  0 bits    AECDH-NULL-SHA               
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-GCM-SHA384  
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA384      
+Accepted  TLSv1.2  256 bits  ECDHE-RSA-AES256-SHA         
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384    
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA256        
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA           
+Accepted  TLSv1.2  256 bits  DHE-RSA-CAMELLIA256-SHA      
+Accepted  TLSv1.2  256 bits  AES256-GCM-SHA384            
+Accepted  TLSv1.2  256 bits  AES256-SHA256                
+Accepted  TLSv1.2  256 bits  AES256-SHA                   
+Accepted  TLSv1.2  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-GCM-SHA256  
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA256      
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-AES128-SHA         
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256    
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256        
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA           
+Accepted  TLSv1.2  128 bits  DHE-RSA-CAMELLIA128-SHA      
+Accepted  TLSv1.2  128 bits  AES128-GCM-SHA256            
+Accepted  TLSv1.2  128 bits  AES128-SHA256                
+Accepted  TLSv1.2  128 bits  AES128-SHA                   
+Accepted  TLSv1.2  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.2  112 bits  ECDHE-RSA-DES-CBC3-SHA       
+Accepted  TLSv1.2  112 bits  DHE-RSA-DES-CBC3-SHA         
+Accepted  TLSv1.2  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.2  128 bits  RC4-MD5                      
+Accepted  TLSv1.2  0 bits    NULL-MD5                     
+Accepted  TLSv1.2  128 bits  DHE-RSA-SEED-SHA             
+Accepted  TLSv1.2  128 bits  SEED-SHA                     
+Preferred TLSv1.1  256 bits  AECDH-AES256-SHA             
+Accepted  TLSv1.1  256 bits  ADH-AES256-SHA               
+Accepted  TLSv1.1  256 bits  ADH-CAMELLIA256-SHA          
+Accepted  TLSv1.1  128 bits  AECDH-AES128-SHA             
+Accepted  TLSv1.1  128 bits  ADH-AES128-SHA               
+Accepted  TLSv1.1  128 bits  ADH-SEED-SHA                 
+Accepted  TLSv1.1  128 bits  ADH-CAMELLIA128-SHA          
+Accepted  TLSv1.1  112 bits  AECDH-DES-CBC3-SHA           
+Accepted  TLSv1.1  112 bits  ADH-DES-CBC3-SHA             
+Accepted  TLSv1.1  128 bits  AECDH-RC4-SHA                
+Accepted  TLSv1.1  128 bits  ADH-RC4-MD5                  
+Accepted  TLSv1.1  0 bits    AECDH-NULL-SHA               
+Accepted  TLSv1.1  256 bits  ECDHE-RSA-AES256-SHA         
+Accepted  TLSv1.1  256 bits  DHE-RSA-AES256-SHA           
+Accepted  TLSv1.1  256 bits  DHE-RSA-CAMELLIA256-SHA      
+Accepted  TLSv1.1  256 bits  AES256-SHA                   
+Accepted  TLSv1.1  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.1  128 bits  ECDHE-RSA-AES128-SHA         
+Accepted  TLSv1.1  128 bits  DHE-RSA-AES128-SHA           
+Accepted  TLSv1.1  128 bits  DHE-RSA-CAMELLIA128-SHA      
+Accepted  TLSv1.1  128 bits  AES128-SHA                   
+Accepted  TLSv1.1  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.1  112 bits  ECDHE-RSA-DES-CBC3-SHA       
+Accepted  TLSv1.1  112 bits  DHE-RSA-DES-CBC3-SHA         
+Accepted  TLSv1.1  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.1  128 bits  RC4-MD5                      
+Accepted  TLSv1.1  0 bits    NULL-MD5                     
+Accepted  TLSv1.1  128 bits  DHE-RSA-SEED-SHA             
+Accepted  TLSv1.1  128 bits  SEED-SHA                     
+Accepted  TLSv1.1  128 bits  IDEA-CBC-SHA                 
+Preferred TLSv1.0  256 bits  AECDH-AES256-SHA             
+Accepted  TLSv1.0  256 bits  ADH-AES256-SHA               
+Accepted  TLSv1.0  256 bits  ADH-CAMELLIA256-SHA          
+Accepted  TLSv1.0  128 bits  AECDH-AES128-SHA             
+Accepted  TLSv1.0  128 bits  ADH-AES128-SHA               
+Accepted  TLSv1.0  128 bits  ADH-SEED-SHA                 
+Accepted  TLSv1.0  128 bits  ADH-CAMELLIA128-SHA          
+Accepted  TLSv1.0  112 bits  AECDH-DES-CBC3-SHA           
+Accepted  TLSv1.0  112 bits  ADH-DES-CBC3-SHA             
+Accepted  TLSv1.0  128 bits  AECDH-RC4-SHA                
+Accepted  TLSv1.0  128 bits  ADH-RC4-MD5                  
+Accepted  TLSv1.0  0 bits    AECDH-NULL-SHA               
+Accepted  TLSv1.0  256 bits  ECDHE-RSA-AES256-SHA         
+Accepted  TLSv1.0  256 bits  DHE-RSA-AES256-SHA           
+Accepted  TLSv1.0  256 bits  DHE-RSA-CAMELLIA256-SHA      
+Accepted  TLSv1.0  256 bits  AES256-SHA                   
+Accepted  TLSv1.0  256 bits  CAMELLIA256-SHA              
+Accepted  TLSv1.0  128 bits  ECDHE-RSA-AES128-SHA         
+Accepted  TLSv1.0  128 bits  DHE-RSA-AES128-SHA           
+Accepted  TLSv1.0  128 bits  DHE-RSA-CAMELLIA128-SHA      
+Accepted  TLSv1.0  128 bits  AES128-SHA                   
+Accepted  TLSv1.0  128 bits  CAMELLIA128-SHA              
+Accepted  TLSv1.0  112 bits  ECDHE-RSA-DES-CBC3-SHA       
+Accepted  TLSv1.0  112 bits  DHE-RSA-DES-CBC3-SHA         
+Accepted  TLSv1.0  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.0  128 bits  RC4-MD5                      
+Accepted  TLSv1.0  0 bits    NULL-MD5                     
+Accepted  TLSv1.0  128 bits  DHE-RSA-SEED-SHA             
+Accepted  TLSv1.0  128 bits  SEED-SHA                     
+Accepted  TLSv1.0  128 bits  IDEA-CBC-SHA                 
+
+  Server Key Exchange Group(s):
+TLSv1.2  128 bits  secp256k1
+TLSv1.2  128 bits  secp256r1 (NIST P-256)
+TLSv1.2  192 bits  secp384r1 (NIST P-384)
+TLSv1.2  260 bits  secp521r1 (NIST P-521)
+
+  SSL Certificate:
+    Unable to parse certificate
+
+  SSL Certificate:
+    Unable to parse certificate
+
+  SSL Certificate:
+    Unable to parse certificate
+
+  SSL Certificate:
+    Unable to parse certificate
+Certificate information cannot be retrieved.
+
