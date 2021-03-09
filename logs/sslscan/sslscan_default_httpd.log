@@ -1,3 +1,5 @@
+# SSLCipherSuite HIGH:3DES:!aNULL:!MD5:!SEED:!IDEA
+# SSLProtocol ALL -SSLv2 -SSLv3
 Version: 2.0.8-static
 OpenSSL 1.1.1k-dev  xx XXX xxxx
 

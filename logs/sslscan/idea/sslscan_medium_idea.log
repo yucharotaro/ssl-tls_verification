@@ -1,0 +1,83 @@
+# SSLCipherSuite medium:idea
+# SSLProtocol all -SSLv2 -SSLv3
+Version: 2.0.8-static
+OpenSSL 1.1.1k-dev  xx XXX xxxx
+
+Connected to 172.X.X.1
+
+Testing SSL server 172.X.X.1 on port 4443 using SNI name 172.X.X.1
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   enabled
+TLSv1.1   enabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Secure session renegotiation supported
+
+  TLS Compression:
+Compression disabled
+
+  Heartbleed:
+TLSv1.2 not vulnerable to heartbleed
+TLSv1.1 not vulnerable to heartbleed
+TLSv1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  128 bits  DHE-RSA-SEED-SHA              DHE 2048 bits
+Accepted  TLSv1.2  128 bits  ADH-SEED-SHA                  DHE 2048 bits
+Accepted  TLSv1.2  128 bits  SEED-SHA                     
+Accepted  TLSv1.2  112 bits  ECDHE-RSA-DES-CBC3-SHA        Curve P-256 DHE 256
+Accepted  TLSv1.2  112 bits  DHE-RSA-DES-CBC3-SHA          DHE 2048 bits
+Accepted  TLSv1.2  112 bits  AECDH-DES-CBC3-SHA            Curve P-256 DHE 256
+Accepted  TLSv1.2  112 bits  ADH-DES-CBC3-SHA              DHE 2048 bits
+Accepted  TLSv1.2  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.2  128 bits  ECDHE-RSA-RC4-SHA             Curve P-256 DHE 256
+Accepted  TLSv1.2  128 bits  AECDH-RC4-SHA                 Curve P-256 DHE 256
+Accepted  TLSv1.2  128 bits  ADH-RC4-MD5                   DHE 2048 bits
+Accepted  TLSv1.2  128 bits  RC4-SHA                      
+Accepted  TLSv1.2  128 bits  RC4-MD5                      
+Preferred TLSv1.1  128 bits  DHE-RSA-SEED-SHA              DHE 2048 bits
+Accepted  TLSv1.1  128 bits  ADH-SEED-SHA                  DHE 2048 bits
+Accepted  TLSv1.1  128 bits  SEED-SHA                     
+Accepted  TLSv1.1  112 bits  ECDHE-RSA-DES-CBC3-SHA        Curve P-256 DHE 256
+Accepted  TLSv1.1  112 bits  DHE-RSA-DES-CBC3-SHA          DHE 2048 bits
+Accepted  TLSv1.1  112 bits  AECDH-DES-CBC3-SHA            Curve P-256 DHE 256
+Accepted  TLSv1.1  112 bits  ADH-DES-CBC3-SHA              DHE 2048 bits
+Accepted  TLSv1.1  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.1  128 bits  IDEA-CBC-SHA                 
+Accepted  TLSv1.1  128 bits  ECDHE-RSA-RC4-SHA             Curve P-256 DHE 256
+Accepted  TLSv1.1  128 bits  AECDH-RC4-SHA                 Curve P-256 DHE 256
+Accepted  TLSv1.1  128 bits  ADH-RC4-MD5                   DHE 2048 bits
+Accepted  TLSv1.1  128 bits  RC4-SHA                      
+Accepted  TLSv1.1  128 bits  RC4-MD5                      
+Preferred TLSv1.0  128 bits  DHE-RSA-SEED-SHA              DHE 2048 bits
+Accepted  TLSv1.0  128 bits  ADH-SEED-SHA                  DHE 2048 bits
+Accepted  TLSv1.0  128 bits  SEED-SHA                     
+Accepted  TLSv1.0  112 bits  ECDHE-RSA-DES-CBC3-SHA        Curve P-256 DHE 256
+Accepted  TLSv1.0  112 bits  DHE-RSA-DES-CBC3-SHA          DHE 2048 bits
+Accepted  TLSv1.0  112 bits  AECDH-DES-CBC3-SHA            Curve P-256 DHE 256
+Accepted  TLSv1.0  112 bits  ADH-DES-CBC3-SHA              DHE 2048 bits
+Accepted  TLSv1.0  112 bits  DES-CBC3-SHA                 
+Accepted  TLSv1.0  128 bits  IDEA-CBC-SHA                 
+Accepted  TLSv1.0  128 bits  ECDHE-RSA-RC4-SHA             Curve P-256 DHE 256
+Accepted  TLSv1.0  128 bits  AECDH-RC4-SHA                 Curve P-256 DHE 256
+Accepted  TLSv1.0  128 bits  ADH-RC4-MD5                   DHE 2048 bits
+Accepted  TLSv1.0  128 bits  RC4-SHA                      
+Accepted  TLSv1.0  128 bits  RC4-MD5                      
+
+  SSL Certificate:
+Signature Algorithm: sha256WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  /C=XX/L=Default City/O=Default Company Ltd
+Issuer:   /C=XX/L=Default City/O=Default Company Ltd
+Not valid before: Mar  4 06:08:47 2021 GMT
+Not valid after:  Apr  3 06:08:47 2021 GMT
+
