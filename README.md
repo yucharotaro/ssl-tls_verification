@@ -1,6 +1,6 @@
-# centos-aecdh
+# ssl-tls_verification
 
-AECDHの検証環境
+SSL/TLSの検証環境
 
 ## 環境構成
 
