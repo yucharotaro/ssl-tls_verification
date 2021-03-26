@@ -1,0 +1,82 @@
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 C = XX, L = Default City, O = Default Company Ltd
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = XX, L = Default City, O = Default Company Ltd
+verify return:1
+---
+Certificate chain
+ 0 s:C = XX, L = Default City, O = Default Company Ltd
+   i:C = XX, L = Default City, O = Default Company Ltd
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDADCCAegCCQC+Lhb9HFTQ3zANBgkqhkiG9w0BAQsFADBCMQswCQYDVQQGEwJY
+WDEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MRwwGgYDVQQKDBNEZWZhdWx0IENvbXBh
+bnkgTHRkMB4XDTIxMDMwNDA2MDg0N1oXDTIxMDQwMzA2MDg0N1owQjELMAkGA1UE
+BhMCWFgxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEcMBoGA1UECgwTRGVmYXVsdCBD
+b21wYW55IEx0ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKeh8Grk
+YObA4ycDQqrKwfJIe7tqG+vcTu+yX9v9O2TDKQ7M5LeHAJTaOoUri06VsmlhqlV/
+XrMhBcXwPDeEY5SSVKjegBJJwVUfZKAXf59c1/PTXt2VweqUT0OpxHABXKuIwzGv
+2mAZUt+ptrZtyVbJ7TFvjo1wEUPwNBOd6lP7XM+OCdGuUVLL4XG8uw/XOe/Y+oOB
+B1F6IlfOZsuyMGglMO9n5UYIXhBVFqELp6Q8P/7h5yiak5iW6R7UHGwsum0fSeOx
+IJ0BfIoFnTZBf967/ghv0L66qa94xfZyQT3/bpdti81pd7TKVU9wcHiZ7630/Tw5
+23A/bwM0qvFuYGMCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAf6TbAP3iCxeIASOO
+9JLXCUF+GriI4l3iNfbZl9AQTaj+qow5N89JrypHN/sj2jIg628mPNye9HVs/HSp
+vU7RICFMZRqwdynyDwDaJG8CcxMjVjKPceyVbYKKPZGfaEntlHtCaYWxoowqbs+e
+v4ZUd3b/D3eHv17540rGTjkwXTheI4yzGFosP1sCFK5vOpmabwcJH+J9IxYbomUQ
+qeGBykmiPU6jZrSqKN+SupcGyStLH+Xc7DOvjVjkDENFIbVMJeSZn2sQ5fMb6mQr
+vKUFjbKmimbzcDJtO0IHmoVcqoMrlYkSp8jRUtUgDO0MYGXJpictK7O3YO/O8C34
+mv7wEQ==
+-----END CERTIFICATE-----
+subject=C = XX, L = Default City, O = Default Company Ltd
+
+issuer=C = XX, L = Default City, O = Default Company Ltd
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: RSA
+Server Temp Key: DH, 1024 bits
+---
+SSL handshake has read 1644 bytes and written 479 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is DHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : DHE-RSA-AES256-GCM-SHA384
+    Session-ID: 4BD867BD48687141F0DE43EAB3BAC7FF527F8D6877470B5F5CB09FC15CA85AF6
+    Session-ID-ctx: 
+    Master-Key: 57D1EB8C9D55A45AB387FE6AEA0B30B70DBB7D4730EE2A8A9ED8C3EC8F546AFB54FC34C90B3E8F72C3BCD00E063CFDE3
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 3a 60 0d fe 0b 05 37 88-3a b1 e4 d4 cd e6 e4 3e   :`....7.:......>
+    0010 - d1 14 11 59 31 2c f4 8c-b8 d2 7a 47 8e b6 9d 93   ...Y1,....zG....
+    0020 - 94 a9 4f 5a a1 b9 89 4e-e3 43 69 f6 7b ce fd e5   ..OZ...N.Ci.{...
+    0030 - 48 40 17 1b 37 d8 b0 e0-38 56 14 d2 fc 2e b4 b0   H@..7...8V......
+    0040 - fd c7 da 06 f5 75 3b af-a8 6b 6d 13 96 35 f2 c8   .....u;..km..5..
+    0050 - 28 3f 42 94 a3 3c d3 20-2a 7d 03 6b 36 63 ff ff   (?B..<. *}.k6c..
+    0060 - b4 db 88 ec 59 b5 63 3e-8b 45 fb 33 74 40 ae 18   ....Y.c>.E.3t@..
+    0070 - 7c ac 29 40 1a 83 62 82-64 82 70 e5 8e e3 49 ae   |.)@..b.d.p...I.
+    0080 - 9f e1 ed ea 89 ef 38 43-89 e2 a1 96 af 36 50 4e   ......8C.....6PN
+    0090 - c0 b4 7e 92 b8 22 0c 66-14 e3 a3 f2 b9 bc a1 1b   ..~..".f........
+    00a0 - e1 3c 12 b5 44 a1 32 74-45 2e 1c 81 e2 f2 2e a2   .<..D.2tE.......
+    00b0 - 12 7c cc a5 07 fe c4 31-e2 c7 b3 e8 d2 6a fd 44   .|.....1.....j.D
+
+    Start Time: 1616744361
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: no
+---
+^C
+

@@ -1,0 +1,30 @@
+CentOS 7.8
+Apache/2.4.6-97.el7.centos
+OpenSSL/1.0.2k-21.el7_9
+
+DHのデフォルトの鍵長は2048bit。
+
+万が一DHの鍵長が1024bitの場合は
+以下の手順により設定変更可能。
+
+1. 2048bitのDHパラメータを作成
+$ openssl dhparam -out dhparams.pem 2048
+
+2. 証明書の末尾に1で作成したDHパラメータを追記
+$ cat dhparams.pem >> server.crt
+
+・server.crtに追記した例
+-----END CERTIFICATE-----
+-----BEGIN DH PARAMETERS-----
+hogehoge...
+-----END DH PARAMETERS----
+
+
+
+3. ApacheのSSL設定ファイル(ssl.confなど)にて上記で設定した証明書までのパスを記載
+--ssl.conf--
+SSLCertificateFile /etc/httpd/conf/server.crt
+------------
+
+4. Apacheの再起動
+$ systemctl restart httpd
