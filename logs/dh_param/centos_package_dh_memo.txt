@@ -2,11 +2,25 @@ CentOS 7.8
 Apache/2.4.6-97.el7.centos
 OpenSSL/1.0.2k-21.el7_9
 
-DHのデフォルトの鍵長は2048bit。
+DHのデフォルトの鍵長は
+Apacheを利用する場合、以下の2通りの方法で決定される。
+1. サーバーの秘密鍵と同じ鍵長、もしくはそれより大きい長さのDHパラメータにより決定
+2. サーバーの証明書に含まれているDHパラメータにより決定
 
-万が一DHの鍵長が1024bitの場合は
-以下の手順により設定変更可能。
+DHの鍵長を変更するには以下2通りの方法がある。
+・Apacheの設定ファイル(ssl.confなど)にSSLOpenSSLConfCmdディレクティブを用いて変更する
+例)
+1. 2048bitのDHパラメータを作成
+$ openssl dhparam -out dhparams.pem 2048
 
+2. Apacheの設定ファイル(ssl.cnf)に以下を記載
+SSLOpenSSLConfCmd DHParameters "/path/to/dhparams.pem"
+
+3. Apacheの再起動
+$ systemctl restart httpd
+
+・サーバーの証明書に任意のDHパラメータを含ませて変更する
+例)
 1. 2048bitのDHパラメータを作成
 $ openssl dhparam -out dhparams.pem 2048
 
@@ -19,8 +33,6 @@ $ cat dhparams.pem >> server.crt
 hogehoge...
 -----END DH PARAMETERS----
 
-
-
 3. ApacheのSSL設定ファイル(ssl.confなど)にて上記で設定した証明書までのパスを記載
 --ssl.conf--
 SSLCertificateFile /etc/httpd/conf/server.crt
@@ -28,3 +40,6 @@ SSLCertificateFile /etc/httpd/conf/server.crt
 
 4. Apacheの再起動
 $ systemctl restart httpd
+
+・適当な鍵長の秘密鍵を用意して変更する
+
