@@ -1,0 +1,84 @@
+$ openssl s_client -connect 127.0.0.1:4443
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+verify return:1
+---
+Certificate chain
+ 0 s:C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+   i:C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIDMjCCAhoCCQDQwN57EZtJbjANBgkqhkiG9w0BAQsFADBbMQswCQYDVQQGEwJB
+VTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0
+cyBQdHkgTHRkMRQwEgYDVQQDDAtkaC10ZXN0LmNvbTAeFw0yMTA1MTEwNjMwMjZa
+Fw0yMjA1MTEwNjMwMjZaMFsxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0
+YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxFDASBgNVBAMM
+C2RoLXRlc3QuY29tMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArJTZ
+CrVO8l1xp/433Fn/N89IoBrLINtPQ3oyBwYc1bk+UZ/+hg+DlA4Kna/EH296lNJq
+ZgY6qCq2156b0VBR+QROVgKWpdlSoGz6iSSTrIYUD7eQZ2KCxEQbV/1fr2UqDsBI
+KpK2iEeucCdK54611RNogjAncvmNBtthaVLg4GhH7Ya2gGbVJjhtzGsv09BH79p1
+L8zBmGNRK4Pmy0/Qrep7eOEVX6MonhOw0X/U35cv+owi/0VOP0YBwH4iAiSbyQfg
+ynVaHDjfarz5C/XTC5FR6XevCUvDqk1ESKey5DzhxUFgOYWDaAoVkXxKdwTNdnNh
+B3lnlXLqyTKJz7Id/wIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQCoFNY/L64RF+Cn
+/Ro9fsJL+U7HSHucMcBnCpt3+eiGHwluvHnxkm3hIM/mYKqjUaEfSj3+pGAVtFVU
+y/R6eIqnPSuRnG6T29ZfauFC1U4m67zqD/M1UpPlVjH6uyqYvwCd+e64jr2I8uyl
+d8aMs9ul9hTCxLbRP5rpGoaJQO+KFdZ553XPCv90VBQzUIXmoZaJl14RcrrP37R+
+VK6Q0lM1XK1d49cS0jwQJ0SbdSBgTHWA5/v5G6OsSlG79xdtjn0EfTUcoY8JdcoE
+pFn7jhCuUtsBb7+HNO2b61zQBCZBNAFHjh8WYGztt2Ol8jKeT/3/GHWS9Yg9mlDW
+vBBL0nRR
+-----END CERTIFICATE-----
+subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+
+issuer=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: DH, 1024 bits
+---
+SSL handshake has read 1694 bytes and written 483 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is DHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : DHE-RSA-AES256-GCM-SHA384
+    Session-ID: C2B3B5E9E761E168AC8779F7606026F95A48FBC7D883D37374C59FBFAFB142A7
+    Session-ID-ctx:
+    Master-Key: 1EB5AD91472E807A3429E3AC4859EBF97BB83E2E8BC75DB56C95433C36F12DD218722B5FA81ADF2C66A345185ABD832D
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 79 2c 36 cd 4c 41 30 46-56 73 4a 18 25 1f e8 0a   y,6.LA0FVsJ.%...
+    0010 - c6 1f 38 c1 3e 46 c8 c9-85 c1 8f 76 f1 1d 85 1d   ..8.>F.....v....
+    0020 - 96 c4 d6 60 6f d8 ce e6-59 8d 05 6b 62 40 ba 8d   ...`o...Y..kb@..
+    0030 - 03 ad 84 11 55 1d 8e 7c-4e d3 87 0c 97 18 a2 2d   ....U..|N......-
+    0040 - 36 a8 7f d2 cf c1 98 15-64 ee 2f ae db 57 02 c8   6.......d./..W..
+    0050 - cf 5b 41 9f fa fc 39 9c-57 b6 01 4e 2f cb c5 f4   .[A...9.W..N/...
+    0060 - 96 f7 7d 28 f4 dc 0c c4-72 21 ef 48 49 98 f0 20   ..}(....r!.HI..
+    0070 - 8f 02 ee fd b4 cc b9 8e-7d 8f ea b8 7b 73 4e 77   ........}...{sNw
+    0080 - 11 b8 ce 36 cd ea 29 4e-8d 5b 84 37 1f 82 80 5a   ...6..)N.[.7...Z
+    0090 - eb 4e 38 7d 8e 90 fb 8e-68 97 b6 93 08 04 cb 5d   .N8}....h......]
+    00a0 - 88 eb cd 0f c2 24 01 8a-ac 62 13 83 e1 61 03 d4   .....$...b...a..
+    00b0 - 51 4b 62 f6 8c 04 38 58-b2 9d e2 45 dd e4 00 c5   QKb...8X...E....
+
+    Start Time: 1620718726
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: no
+---
+^C
+

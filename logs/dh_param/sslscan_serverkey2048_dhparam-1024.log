@@ -1,0 +1,88 @@
+$ sslscan 127.0.0.1:4443
+Version: 2.0.9-static
+OpenSSL 1.1.1k  25 Mar 2021
+
+Connected to 127.0.0.1
+
+Testing SSL server 127.0.0.1 on port 4443 using SNI name 127.0.0.1
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   enabled
+TLSv1.1   enabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  TLS Fallback SCSV:
+Server supports TLS Fallback SCSV
+
+  TLS renegotiation:
+Secure session renegotiation supported
+
+  TLS Compression:
+OpenSSL version does not support compression
+Rebuild with zlib1g-dev package for zlib support
+
+  Heartbleed:
+TLSv1.2 not vulnerable to heartbleed
+TLSv1.1 not vulnerable to heartbleed
+TLSv1.0 not vulnerable to heartbleed
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  256 bits  DHE-RSA-AES256-GCM-SHA384     DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA256         DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.2  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-GCM-SHA256     DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA256         DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.2  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.2  128 bits  SEED-SHA
+Accepted  TLSv1.2  112 bits  TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.2  56 bits   TLS_DHE_RSA_WITH_DES_CBC_SHA
+Accepted  TLSv1.2  128 bits  TLS_ECDHE_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.2  128 bits  TLS_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.2  128 bits  TLS_RSA_WITH_RC4_128_MD5
+Accepted  TLSv1.2  112 bits  TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.2  112 bits  TLS_RSA_WITH_3DES_EDE_CBC_SHA
+Preferred TLSv1.1  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.1  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.1  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.1  128 bits  SEED-SHA
+Accepted  TLSv1.1  128 bits  IDEA-CBC-SHA
+Accepted  TLSv1.1  112 bits  TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.1  56 bits   TLS_DHE_RSA_WITH_DES_CBC_SHA
+Accepted  TLSv1.1  128 bits  TLS_ECDHE_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.1  128 bits  TLS_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.1  128 bits  TLS_RSA_WITH_RC4_128_MD5
+Accepted  TLSv1.1  112 bits  TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.1  112 bits  TLS_RSA_WITH_3DES_EDE_CBC_SHA
+Preferred TLSv1.0  256 bits  DHE-RSA-AES256-SHA            DHE 1024 bits
+Accepted  TLSv1.0  256 bits  DHE-RSA-CAMELLIA256-SHA       DHE 1024 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-AES128-SHA            DHE 1024 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-SEED-SHA              DHE 1024 bits
+Accepted  TLSv1.0  128 bits  DHE-RSA-CAMELLIA128-SHA       DHE 1024 bits
+Accepted  TLSv1.0  128 bits  SEED-SHA
+Accepted  TLSv1.0  128 bits  IDEA-CBC-SHA
+Accepted  TLSv1.0  112 bits  TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.0  56 bits   TLS_DHE_RSA_WITH_DES_CBC_SHA
+Accepted  TLSv1.0  128 bits  TLS_ECDHE_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.0  128 bits  TLS_RSA_WITH_RC4_128_SHA
+Accepted  TLSv1.0  128 bits  TLS_RSA_WITH_RC4_128_MD5
+Accepted  TLSv1.0  112 bits  TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+Accepted  TLSv1.0  112 bits  TLS_RSA_WITH_3DES_EDE_CBC_SHA
+
+  SSL Certificate:
+Signature Algorithm: sha256WithRSAEncryption
+RSA Key Strength:    2048
+
+Subject:  dh-test.com
+Issuer:   dh-test.com
+
+Not valid before: May 11 06:30:26 2021 GMT
+Not valid after:  May 11 06:30:26 2022 GMT
+

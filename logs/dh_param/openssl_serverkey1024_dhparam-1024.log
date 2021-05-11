@@ -1,0 +1,77 @@
+$ openssl s_client -connect 127.0.0.1:4443
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+verify return:1
+---
+Certificate chain
+ 0 s:C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+   i:C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICLTCCAZYCCQDHsNGf05e/MDANBgkqhkiG9w0BAQsFADBbMQswCQYDVQQGEwJB
+VTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0
+cyBQdHkgTHRkMRQwEgYDVQQDDAtkaC10ZXN0LmNvbTAeFw0yMTA1MTEwNjI5NTJa
+Fw0yMjA1MTEwNjI5NTJaMFsxCzAJBgNVBAYTAkFVMRMwEQYDVQQIDApTb21lLVN0
+YXRlMSEwHwYDVQQKDBhJbnRlcm5ldCBXaWRnaXRzIFB0eSBMdGQxFDASBgNVBAMM
+C2RoLXRlc3QuY29tMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCZgW+RKZHW
+4JYecmFDZr4U/rvOE7sdb51HPLXSDrmfoTn/MUw4XNNOeY2GpyNeQa25vO1LnBjg
+syU+tU7FG+++PTouPfzGkgkeyDCSBqUQ4QsrMZSb4HmZ0aLOpaNMlvXDZ1mxJpfk
+5q/ywMIi6vVIDR1IEJxx5xf8YC6VWKjccQIDAQABMA0GCSqGSIb3DQEBCwUAA4GB
+AAULNloClvX3BobBnRC4xBM9DhHJDmGkhwp4OM6H6MCafMZYE2t7L8qfxQCTsAI7
+3VYPdJwZnOhEgrsGNNK5RdmB+TlHBtAbNw5Rb0oRPIKF0cnu3izENss8NB5rhhSj
+DcwO+RL7HlbOzrs3WxSHH/pnD272ZLYK+VcXO5KVxkEC
+-----END CERTIFICATE-----
+subject=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+
+issuer=C = AU, ST = Some-State, O = Internet Widgits Pty Ltd, CN = dh-test.com
+
+---
+No client certificate CA names sent
+Peer signing digest: SHA512
+Peer signature type: RSA
+Server Temp Key: DH, 1024 bits
+---
+SSL handshake has read 1305 bytes and written 483 bytes
+Verification error: self signed certificate
+---
+New, TLSv1.2, Cipher is DHE-RSA-AES256-GCM-SHA384
+Server public key is 1024 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : DHE-RSA-AES256-GCM-SHA384
+    Session-ID: 6D5FC58686A1E2BC0A2565A3723D35C05C04B9BB80E80376B00701D72E4DCEA6
+    Session-ID-ctx:
+    Master-Key: FEF3756DD96DB288393F0F3B8E26B5E2BBF22803FD4B4A662025E1B11F100AC7C6B51FD69FBD537D31067E7BFAD6E1A3
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 300 (seconds)
+    TLS session ticket:
+    0000 - 55 98 ec 96 8a 83 1d ba-db 16 de 49 23 f5 c7 07   U..........I#...
+    0010 - 00 00 c6 d6 35 30 46 bd-20 8f d0 6f e5 91 2e e8   ....50F. ..o....
+    0020 - 20 8c c2 92 94 87 f3 eb-ae 7c 17 ef 79 0d 50 ed    ........|..y.P.
+    0030 - b3 18 e3 20 02 16 1e c2-eb d7 e8 e2 5e f3 2b be   ... ........^.+.
+    0040 - 41 97 b7 70 09 12 a9 4d-d0 f4 bd cc 1e 14 74 46   A..p...M......tF
+    0050 - b6 ff 93 46 4c 23 2e 47-21 99 d7 c2 4e 60 3c d5   ...FL#.G!...N`<.
+    0060 - 68 55 3b e4 b8 0d 66 db-b9 df 89 c1 75 73 78 a3   hU;...f.....usx.
+    0070 - 33 af 6a 59 1f a4 dc 38-d3 a1 fd 54 0a d8 1b 6e   3.jY...8...T...n
+    0080 - a6 b9 06 e4 0e f2 8e 4c-18 f4 21 0d b4 7b 4d 87   .......L..!..{M.
+    0090 - ff e2 1e a9 d3 81 74 55-e3 03 fe db b0 47 62 bd   ......tU.....Gb.
+    00a0 - d1 63 1e b2 5a 85 5a 5a-6b 89 6d 46 ba 34 af 85   .c..Z.ZZk.mF.4..
+    00b0 - d1 c6 70 09 cf 37 e0 91-3e bd c6 4e 75 e0 45 1c   ..p..7..>..Nu.E.
+
+    Start Time: 1620718033
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self signed certificate)
+    Extended master secret: no
+---
+^C
