@@ -1,0 +1,20 @@
+Version: 2.0.9-static
+OpenSSL 1.1.1k  25 Mar 2021
+
+Connected to 127.0.0.1
+
+Testing SSL server dh-test.com on port 4443 using SNI name dh-test.com
+
+  SSL/TLS Protocols:
+SSLv2     disabled
+SSLv3     disabled
+TLSv1.0   disabled
+TLSv1.1   disabled
+TLSv1.2   enabled
+TLSv1.3   disabled
+
+  Supported Server Cipher(s):
+Preferred TLSv1.2  56 bits   TLS_DHE_RSA_WITH_DES_CBC_SHA 
+Preferred TLSv1.2  56 bits   TLS_RSA_WITH_DES_CBC_SHA     
+Certificate information cannot be retrieved.
+

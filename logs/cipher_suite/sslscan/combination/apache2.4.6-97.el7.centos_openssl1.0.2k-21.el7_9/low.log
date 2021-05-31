@@ -1,0 +1,10 @@
+SSLCipherSuite LOW
+がSSLのcipher一覧に存在しないため、apacheが起動しない
+
+[root@158512b72eeb logs]# systemctl start httpd
+Job for httpd.service failed because the control process exited with error code. See "systemctl status httpd.service" and "journalctl -xe" for details.
+
+
+[root@158512b72eeb logs]# cat ssl_error_log
+[Mon May 31 06:55:13.176577 2021] [ssl:emerg] [pid 274] AH01898: Unable to configure permitted SSL ciphers
+[Mon May 31 06:55:13.176605 2021] [ssl:emerg] [pid 274] SSL Library Error: error:1410D0B9:SSL routines:SSL_CTX_set_cipher_list:no cipher match
