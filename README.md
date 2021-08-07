@@ -1,18 +1,10 @@
 # ssl-tls_verification
 
-SSL/TLSの検証環境
+SSL/TLSの検証結果ログの掃き溜め。
 
-## 環境構成
+## 保存しているログの種類
 
-- CentOS 7.9
-- Apahce/2.4.6-93.el7.centos
-- OpenSSL/1.0.2k-19.el7
+- DH鍵交換に関する検証(Logjam, DH Param)
 
-## 使用方法
-
-1. `centos7/ssl/`にサーバの秘密鍵を`server.key`として、サーバの証明書を`server.crt`として作成する。
-
-2. docker-compose build
-
-3. docker-compose up -d
+- OpenSSLのバージョンごとに有効となるCipherSuiteの組み合わせに関する検証
 
