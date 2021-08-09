@@ -5,18 +5,23 @@
 - final
 
 SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+
 SSLCipherSuite ALL:!LOW:!aNULL:!EXP:!3DES:!RC4:!IDEA:!MD5
 
 - draft
 
 SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
+
 SSLCipherSuite ALL:!LOW:!aNULL:!EXP:!3DES:!RC4:!IDEA:!SHA1:!MD5
+
 SSLHonorCipherOrder on
 
 - draft2
 
 SSLProtocol all -SSLv3
+
 SSLCipherSuite ALL:!LOW:!aNULL:!EXP:!3DES:!RC4:!IDEA
+
 SSLHonorCipherOrder on
 
 
